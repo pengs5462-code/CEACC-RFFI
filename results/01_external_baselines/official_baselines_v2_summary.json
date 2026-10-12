@@ -1,0 +1,44 @@
+{
+  "protocol": {
+    "splits": [1, 2, 3],
+    "seeds": [42, 2023, 3407],
+    "runs_per_method": 9,
+    "selection": "known-only",
+    "operating_threshold": "known-validation Q90",
+    "target_rogue_used_for_fit_selection_or_threshold": false
+  },
+  "nsrff": {
+    "status": "recommended_main_table",
+    "auc": {"mean": 0.6773919753, "sample_std": 0.0649204594, "min": 0.5940972222, "max": 0.7745138889},
+    "eer": {"mean": 0.3728780864, "sample_std": 0.0601527913},
+    "known_closed_acc": {"mean": 0.7086419753, "sample_std": 0.0360160191},
+    "known_accept_rate": {"mean": 0.8759259259, "sample_std": 0.0336787657},
+    "unknown_recall": {"mean": 0.2791666667, "sample_std": 0.0999511599},
+    "unknown_f1": {"mean": 0.3862870856, "sample_std": 0.1163418394},
+    "oscr": {"mean": 0.5216782407, "sample_std": 0.0491849730}
+  },
+  "proser": {
+    "status": "appendix",
+    "auc": {"mean": 0.5756809414, "sample_std": 0.0664970352, "min": 0.4348090278, "max": 0.6345659722},
+    "eer": {"mean": 0.4536265432, "sample_std": 0.0528206238},
+    "known_closed_acc": {"mean": 0.6320987654, "sample_std": 0.0342217011},
+    "known_accept_rate": {"mean": 0.9018518519, "sample_std": 0.0306815584},
+    "unknown_recall": {"mean": 0.1472222222, "sample_std": 0.0712000312},
+    "unknown_f1": {"mean": 0.2282166026, "sample_std": 0.0948630809},
+    "oscr": {"mean": 0.4131442901, "sample_std": 0.0441244665}
+  },
+  "gcpl": {
+    "status": "appendix_only",
+    "auc": {"mean": 0.5374459877, "sample_std": 0.0916433201, "min": 0.3502083333, "max": 0.6727777778},
+    "eer": {"mean": 0.4879243827, "sample_std": 0.0789052048},
+    "known_closed_acc": {"mean": 0.6660493827, "sample_std": 0.0494915852},
+    "known_accept_rate": {"mean": 0.8709876543, "sample_std": 0.0518022249},
+    "unknown_recall": {"mean": 0.1840277778, "sample_std": 0.0957143736},
+    "unknown_f1": {"mean": 0.2660299971, "sample_std": 0.1181727962},
+    "oscr": {"mean": 0.4145621142, "sample_std": 0.0656979082}
+  },
+  "excluded": {
+    "rpl": "pilot known test accuracy was 0%; not a valid comparison under the frozen-head protocol",
+    "red_dmnet": "public repository lacks the claimed denoising-autoencoder open-set detector and scoring path"
+  }
+}

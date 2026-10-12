@@ -1,0 +1,21 @@
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Private/large experimental artifacts
+dataset/
+checkpoints/
+*.h5
+*.hdf5
+*.mat
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.log

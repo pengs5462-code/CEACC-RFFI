@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_EVALUATION_ONLY",
+  "seeds": [
+    42,
+    2023,
+    3407
+  ],
+  "transferred_lambdas": {
+    "42": 0.5,
+    "2023": 0.5,
+    "3407": 0.5
+  },
+  "transferred_betas": {
+    "42": 0.5,
+    "2023": 0.5,
+    "3407": 0.5
+  },
+  "lambda_selection_sha256": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7",
+  "beta_selection_sha256": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7",
+  "no_training": true,
+  "no_lora_target_unknown_selection": true
+}

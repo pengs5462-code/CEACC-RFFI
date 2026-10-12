@@ -1,0 +1,96 @@
+{
+  "method": "lora_fixed_ast_complementary_fisher_retaining_transfer_v1",
+  "seed": 2023,
+  "split": 1,
+  "transferred": {
+    "lambda": 0.5,
+    "beta": 0.5,
+    "entropy_beta": 0.5,
+    "source": "ADS-B split-1 seed-matched strict inner-LOEO selections"
+  },
+  "formula": {
+    "accepted_fisher_rank": "r_F = empirical CDF of S_F against Fisher-accepted LoRa known validation",
+    "accepted_review_rank": "r_R = empirical CDF of S_R against Fisher-accepted LoRa known validation",
+    "accepted_branch": "T_beta = (1-beta)*r_F + beta*r_R",
+    "rejected_branch": "1 + empirical CDF of S_F against all LoRa known validation"
+  },
+  "metrics": {
+    "primary_fisher": {
+      "auc": 0.9697238888888889,
+      "eer": 0.08008333333333334,
+      "oscr": 0.9680193055555555,
+      "accepted_region_auc": 0.9460539128895185
+    },
+    "entropy_only_fisher_retaining": {
+      "auc": 0.9710884722222223,
+      "eer": 0.08158333333333334,
+      "oscr": 0.9693944444444444,
+      "accepted_region_auc": 0.9851975625590179
+    },
+    "fisher_retaining_with_transferred_lambda_beta": {
+      "auc": 0.9712222222222222,
+      "eer": 0.08158333333333334,
+      "oscr": 0.9695281944444445,
+      "accepted_region_auc": 0.9887497049102927
+    }
+  },
+  "accepted_region_auc": {
+    "primary_fisher": 0.9460539128895185,
+    "entropy_tail": 0.9884767469310671,
+    "geometry_tail": 0.9979159289423984,
+    "combined_review": 0.9962818696883853,
+    "fisher_retaining_final": 0.9887497049102927
+  },
+  "fixed_decision_metrics": {
+    "primary_fisher": {
+      "known_acc": 0.9958333333333333,
+      "known_accept": 0.8825,
+      "known_correct_accept": 0.8825,
+      "unknown_recall": 0.9573333333333334,
+      "unknown_precision": 0.9532027879190176,
+      "unknown_f1": 0.9552635955429902,
+      "overall_open_accuracy": 0.935952380952381
+    },
+    "fisher_retaining_final": {
+      "known_acc": 0.9958333333333333,
+      "known_accept": 0.8541666666666666,
+      "known_correct_accept": 0.8541666666666666,
+      "unknown_recall": 0.9986666666666667,
+      "unknown_precision": 0.9448123620309051,
+      "unknown_f1": 0.9709933560200941,
+      "overall_open_accuracy": 0.9573809523809523
+    }
+  },
+  "space_increment": {
+    "Deep": {
+      "auc": 0.52958625,
+      "oscr": 0.5277319444444444
+    },
+    "Deep + explicit RF": {
+      "auc": 0.6855125,
+      "oscr": 0.6844991666666667
+    },
+    "Deep + explicit RF + learned AST": {
+      "auc": 0.9697238888888889,
+      "oscr": 0.9679679166666666
+    }
+  },
+  "protocol": {
+    "stage_a_retrained": false,
+    "stage_b_retrained_on_enrolled_lora_only": true,
+    "lora_target_unknown_used_for_lambda_or_beta_selection": false,
+    "lora_known_test_used_for_lambda_or_beta_selection": false,
+    "calibration_uses_known_validation_only": true,
+    "test_used_only_for_final_metrics": true
+  },
+  "hashes": {
+    "script": "59fbc51d4b27ec4ddd5a5bc05e41d36baecd6ea8e256bfe47cf0ca2adf66e392",
+    "base_checkpoint": "5b305ca627653981a4f8c035892e80eae709ec8d6b43278c601bee399b645664",
+    "head_checkpoint": "687179196e484553e979f749f25c70a55f7de2b403f283335b9f0af0c97c7be9",
+    "score_archive": "97200c03195658075e071d657d03c4977ffeec2c501b796c451f673ca762b40d",
+    "manifest": "d217608ae16f4cff2d4a341cc1110710e802243393f533b1be716f5041155b01",
+    "benchmark": "0b55ae41800124672f4be20fc5bd39eb88ce4791fdded252bcc626b0095f6db0",
+    "lambda_selection": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7",
+    "beta_selection": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7"
+  }
+}

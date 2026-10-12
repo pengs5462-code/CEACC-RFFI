@@ -1,0 +1,30 @@
+{
+  "split_index": 2,
+  "role_split_seed": 2202,
+  "known_classes": [
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    19,
+    20,
+    29
+  ],
+  "rogue_classes": [
+    0,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12,
+    15
+  ],
+  "known_train_samples": 540,
+  "known_validation_samples": 180,
+  "known_test_samples": 180,
+  "rogue_test_samples": 160,
+  "status": "development"
+}

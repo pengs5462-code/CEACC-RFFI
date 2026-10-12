@@ -1,0 +1,10 @@
+{
+  "verdict": "WEAKEN/OPTIONAL",
+  "rule": "REMOVE if final OSCR and Known Acc lower CI >= -0.5 pp and no run OSCR loss >2 pp; OPTIONAL if mean OSCR loss <=0.5 pp; else KEEP",
+  "alpha_selection_distribution": {
+    "alpha0": 2,
+    "alpha025": 3,
+    "alpha050": 3,
+    "alpha100": 1
+  }
+}

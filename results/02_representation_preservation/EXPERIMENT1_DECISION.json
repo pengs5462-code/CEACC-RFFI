@@ -1,0 +1,5 @@
+{
+  "fixed_ast_supported": true,
+  "rule": "lower paired CI for final OSCR and Known Acc >= -0.5 pp; no run OSCR loss >2 pp",
+  "min_run_oscr_delta": 0.0
+}

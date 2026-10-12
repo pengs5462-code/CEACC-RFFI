@@ -1,0 +1,220 @@
+{
+  "name": "multiknown17_v1",
+  "purpose": "supplementary low-sample multi-known/rogue stability benchmark",
+  "limitations": [
+    "not a substitute for the unavailable original 30-class source dataset",
+    "repurposes legacy balanced test samples into new disjoint 60/20/20 roles",
+    "only 17 global classes are available and every class has 100 samples"
+  ],
+  "source_is_read_only": true,
+  "source_files_sha256": {
+    "known_x": "c54aecedbd489e13c5ae8190ea4aecf8c36fe8cdc33f9890d37eb15eaee44999",
+    "known_y": "1e7b4ba05f0982fdbad88cfa8ee21072dd133b002f6757825d4bb51e4499f8fc",
+    "rogue_x": "ae5b2716b614e6b4fc0ca5f36abca8739bc70a25e24ac4d0bcc55a46d611fe95",
+    "rogue_y_global": "9a88192ffa8fc3a3c665525aaa0ca12460607ba69a19f7f960748a28e753b0e0",
+    "train_metadata": "d1e580d627ebcba6e82c0c77dd2b1166f0a81c26256face03d82b6061ec7c303"
+  },
+  "pool_shape": [
+    1700,
+    4800,
+    2
+  ],
+  "pool_dtype": "float32",
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    15,
+    19,
+    20,
+    29
+  ],
+  "per_class_counts": {
+    "0": 100,
+    "1": 100,
+    "2": 100,
+    "3": 100,
+    "4": 100,
+    "5": 100,
+    "6": 100,
+    "7": 100,
+    "8": 100,
+    "9": 100,
+    "10": 100,
+    "11": 100,
+    "12": 100,
+    "15": 100,
+    "19": 100,
+    "20": 100,
+    "29": 100
+  },
+  "within_class_partition": {
+    "train": 60,
+    "validation": 20,
+    "test": 20
+  },
+  "within_class_partition_seed_formula": "91000 + global_class_id",
+  "exact_duplicate_sample_hashes": 0,
+  "role_manifests": [
+    {
+      "split_index": 1,
+      "role_split_seed": 1101,
+      "known_classes": [
+        0,
+        1,
+        6,
+        8,
+        11,
+        12,
+        19,
+        20,
+        29
+      ],
+      "rogue_classes": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        15
+      ],
+      "known_train_samples": 540,
+      "known_validation_samples": 180,
+      "known_test_samples": 180,
+      "rogue_test_samples": 160,
+      "status": "development"
+    },
+    {
+      "split_index": 2,
+      "role_split_seed": 2202,
+      "known_classes": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        19,
+        20,
+        29
+      ],
+      "rogue_classes": [
+        0,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        15
+      ],
+      "known_train_samples": 540,
+      "known_validation_samples": 180,
+      "known_test_samples": 180,
+      "rogue_test_samples": 160,
+      "status": "development"
+    },
+    {
+      "split_index": 3,
+      "role_split_seed": 3303,
+      "known_classes": [
+        1,
+        3,
+        4,
+        7,
+        10,
+        11,
+        12,
+        15,
+        19
+      ],
+      "rogue_classes": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        9,
+        20,
+        29
+      ],
+      "known_train_samples": 540,
+      "known_validation_samples": 180,
+      "known_test_samples": 180,
+      "rogue_test_samples": 160,
+      "status": "development"
+    },
+    {
+      "split_index": 4,
+      "role_split_seed": 4404,
+      "known_classes": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        15,
+        19,
+        20
+      ],
+      "rogue_classes": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        12,
+        29
+      ],
+      "known_train_samples": 540,
+      "known_validation_samples": 180,
+      "known_test_samples": 180,
+      "rogue_test_samples": 160,
+      "status": "reserved_untouched"
+    },
+    {
+      "split_index": 5,
+      "role_split_seed": 5505,
+      "known_classes": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12,
+        15
+      ],
+      "rogue_classes": [
+        2,
+        5,
+        7,
+        10,
+        11,
+        19,
+        20,
+        29
+      ],
+      "known_train_samples": 540,
+      "known_validation_samples": 180,
+      "known_test_samples": 180,
+      "rogue_test_samples": 160,
+      "status": "reserved_untouched"
+    }
+  ]
+}

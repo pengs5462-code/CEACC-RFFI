@@ -1,0 +1,10 @@
+split,seed,candidate,lambda,beta
+1,42,nophase_alpha0,0.5,0.5
+1,2023,nophase_alpha0,0.5,0.5
+1,3407,nophase_alpha0,0.5,0.5
+2,42,nophase_alpha0,0.5,0.75
+2,2023,nophase_alpha0,0.5,0.75
+2,3407,nophase_alpha0,1.0,0.5
+3,42,nophase_alpha0,0.5,0.5
+3,2023,nophase_alpha0,0.25,0.5
+3,3407,nophase_alpha0,0.5,0.5

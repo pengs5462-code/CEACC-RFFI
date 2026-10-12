@@ -1,0 +1,57 @@
+{
+  "method": "lora_fixed_ast_complementary_fisher_retaining_transfer_v1",
+  "seed": 3407,
+  "split": 1,
+  "transferred": {
+    "lambda": 0.5,
+    "beta": 0.5,
+    "source": "ADS-B split-1 seed-matched strict inner-LOEO selections"
+  },
+  "formula": {
+    "accepted_fisher_rank": "r_F = empirical CDF of S_F against Fisher-accepted LoRa known validation",
+    "accepted_review_rank": "r_R = empirical CDF of S_R against Fisher-accepted LoRa known validation",
+    "accepted_branch": "T_beta = (1-beta)*r_F + beta*r_R",
+    "rejected_branch": "1 + empirical CDF of S_F against all LoRa known validation"
+  },
+  "metrics": {
+    "primary_fisher": {
+      "auc": 0.9650316666666666,
+      "eer": 0.09058333333333335,
+      "oscr": 0.9626109722222221,
+      "accepted_region_auc": 0.9208977946017117
+    },
+    "old_review_replacement_with_final_lambda": {
+      "auc": 0.9698654166666667,
+      "eer": 0.09066666666666665,
+      "oscr": 0.9673688888888888,
+      "accepted_region_auc": 0.9865360733736309
+    },
+    "fisher_retaining_with_transferred_lambda_beta": {
+      "auc": 0.9694411111111111,
+      "eer": 0.09066666666666665,
+      "oscr": 0.9669648611111111,
+      "accepted_region_auc": 0.980822460949189
+    }
+  },
+  "fixed_decision_metrics": {
+    "status": "NOT_RECOMPUTED_OUT_OF_SCOPE",
+    "reason": "This audit updates only Table-X continuous AUC/EER/OSCR ranking metrics."
+  },
+  "protocol": {
+    "stage_a_retrained": false,
+    "stage_b_retrained_on_enrolled_lora_only": true,
+    "lora_target_unknown_used_for_lambda_or_beta_selection": false,
+    "lora_known_test_used_for_lambda_or_beta_selection": false,
+    "calibration_uses_known_validation_only": true,
+    "test_used_only_for_final_metrics": true
+  },
+  "hashes": {
+    "script": "4bcbedb1d33bcb8d72ff77df3c37c80b664b2f17deb14120dbece76939e5629d",
+    "base_checkpoint": "001135d2a67913a00a92e0965562bf2d93385c84e645e75ea52df21a77be8e3e",
+    "head_checkpoint": "6687e36531ba013e65e75369dc2f4e6ddfc60935ab4f9b4fea80805ed4cebe0c",
+    "score_archive": "b363935c6a9956c3e6604ab58583dadef845847388dc8e5728f39af042038886",
+    "manifest": "d217608ae16f4cff2d4a341cc1110710e802243393f533b1be716f5041155b01",
+    "lambda_selection": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7",
+    "beta_selection": "c336a055532097c528c887a7f05bbd2055b2939b8d75aaa03c677569cacb5ac7"
+  }
+}

@@ -1,0 +1,9 @@
+comparison,metric,mean_difference,bootstrap_ci95_low,bootstrap_ci95_high,n_runs
+fisher_retaining-minus-primary_fisher,accepted_region_auc,0.002114242499697839,-0.028279839103062716,0.026406090095321615,9
+fisher_retaining-minus-primary_fisher,auc,0.000638503086419748,-0.011761188271604958,0.01019675925925925,9
+fisher_retaining-minus-primary_fisher,eer,-0.0005787037037036894,-0.015933641975308624,0.017322530864197546,9
+fisher_retaining-minus-primary_fisher,oscr,0.004087577160493818,-0.00530864197530867,0.01183834876543208,9
+fisher_retaining-minus-current_review_replacement,accepted_region_auc,0.03815420746981535,0.02449874071933404,0.053457204881986166,9
+fisher_retaining-minus-current_review_replacement,auc,0.013449074074074079,0.009035493827160488,0.018533950617283912,9
+fisher_retaining-minus-current_review_replacement,eer,-0.008179012345679002,-0.014004629629629608,-0.0026620370370370244,9
+fisher_retaining-minus-current_review_replacement,oscr,0.011925154320987693,0.007320601851851903,0.01705439814814818,9
