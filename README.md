@@ -133,7 +133,7 @@ manuscript:
 
 ```bibtex
 @unpublished{sun2026plsar,
-  author = {Peng Sun and Ping Gan and Jianhong Cheng and Yuanhong Zhong},
+  author = {Peng Sun and Ping Gan and Yaxin Luo and Yuanhong Zhong and Jianhong Cheng},
   title  = {Multi-View RF Evidence Aggregation with Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification},
   note   = {Submitted manuscript},
   year   = {2026},

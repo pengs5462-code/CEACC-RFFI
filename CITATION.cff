@@ -7,10 +7,12 @@ authors:
     given-names: Peng
   - family-names: Gan
     given-names: Ping
-  - family-names: Cheng
-    given-names: Jianhong
+  - family-names: Luo
+    given-names: Yaxin
   - family-names: Zhong
     given-names: Yuanhong
+  - family-names: Cheng
+    given-names: Jianhong
 repository-code: "https://github.com/pengs5462-code/PLSAR-RFFI"
 license: MIT
 version: 1.0.0
@@ -23,9 +25,11 @@ preferred-citation:
       given-names: Peng
     - family-names: Gan
       given-names: Ping
-    - family-names: Cheng
-      given-names: Jianhong
+    - family-names: Luo
+      given-names: Yaxin
     - family-names: Zhong
       given-names: Yuanhong
+    - family-names: Cheng
+      given-names: Jianhong
   year: 2026
   url: "https://github.com/pengs5462-code/PLSAR-RFFI"
