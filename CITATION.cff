@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the accompanying paper."
-title: "PLSAR-RFFI: Multi-View RF Evidence Aggregation with Geometry-Aware Re-Examination"
+title: "CEACC-RFFI: Open-Set RF Fingerprint Identification via Complementary Evidence Aggregation and Cross-View Consistency"
 type: software
 authors:
   - family-names: Sun
@@ -13,13 +13,13 @@ authors:
     given-names: Yuanhong
   - family-names: Cheng
     given-names: Jianhong
-repository-code: "https://github.com/pengs5462-code/PLSAR-RFFI"
+repository-code: "https://github.com/pengs5462-code/CEACC-RFFI"
 license: MIT
 version: 1.0.0
 date-released: 2026-10-12
 preferred-citation:
   type: article
-  title: "Multi-View RF Evidence Aggregation with Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification"
+  title: "Open-Set RF Fingerprint Identification via Complementary Evidence Aggregation and Cross-View Consistency"
   authors:
     - family-names: Sun
       given-names: Peng
@@ -32,4 +32,4 @@ preferred-citation:
     - family-names: Cheng
       given-names: Jianhong
   year: 2026
-  url: "https://github.com/pengs5462-code/PLSAR-RFFI"
+  url: "https://github.com/pengs5462-code/CEACC-RFFI"

@@ -1,12 +1,12 @@
-# PLSAR-RFFI
+# CEACC-RFFI
 
-Official research artifact for **“Multi-View RF Evidence Aggregation with
-Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification.”**
+Official research artifact for **“Open-Set RF Fingerprint Identification via
+Complementary Evidence Aggregation and Cross-View Consistency.”**
 
 **Paper status:** submitted manuscript. The archival article link and DOI will
 be added after publication.
 
-PLSAR follows a **preserve–learn selectively–aggregate–re-examine** pipeline.
+CEACC follows a **preserve–learn selectively–aggregate–re-examine** pipeline.
 It preserves a complete explicit RF descriptor, learns complementary
 amplitude/statistical, spectral, and temporal-envelope views, calibrates three
 open-set evidence channels with known data only, and conditionally re-examines
@@ -16,7 +16,7 @@ provisionally accepted samples using cross-view geometry and classifier entropy.
 
 ### 1. Preserve and learn selectively
 
-PLSAR keeps the complete 304-D explicit RF descriptor instead of forcing all
+CEACC keeps the complete 304-D explicit RF descriptor instead of forcing all
 RF cues into one learned representation. In parallel, a NetTime backbone
 extracts a deep embedding, while dedicated encoders selectively learn
 amplitude/statistical, spectral, and temporal-envelope views. These reusable
@@ -43,7 +43,7 @@ unknown or provisionally accepts it for the next stage.
 
 ### 3. Re-examine provisional accepts
 
-Only signals that pass the primary detector are re-examined. PLSAR reuses the
+Only signals that pass the primary detector are re-examined. CEACC reuses the
 physical-view projections to measure cross-view consistency and the classifier
 logits to measure prediction entropy. Known-only empirical calibration turns
 these cues into a conditional score, allowing difficult rogue signals hidden
@@ -59,7 +59,7 @@ unknown samples.
 | Dataset / setting | AUC | OSCR | Known accuracy | Unknown recall |
 |---|---:|---:|---:|---:|
 | ADS-B, primary three-space detector | 0.8499 | 0.7431 | 0.8593 | 0.5917 |
-| ADS-B, complete PLSAR | **0.8557** | **0.7505** | **0.8593** | **0.6854** |
+| ADS-B, complete CEACC | **0.8557** | **0.7505** | **0.8593** | **0.6854** |
 | LoRa, transferred design | **0.9669** | **0.9645** | — | — |
 
 The ADS-B numbers aggregate three registered known/rogue splits and three
@@ -122,7 +122,7 @@ All scripts accept explicit paths or resolve the repository through
 
 The external methods are author-released components adapted to the same RF
 input, registered splits, seeds, and known-only calibration protocol. They are
-not claimed as original PLSAR components. The result folders retain per-run
+not claimed as original CEACC components. The result folders retain per-run
 outputs and implementation notes so the distinction between native scores and
 protocol adaptation is explicit.
 
@@ -134,10 +134,10 @@ manuscript:
 ```bibtex
 @unpublished{sun2026plsar,
   author = {Peng Sun and Ping Gan and Yaxin Luo and Yuanhong Zhong and Jianhong Cheng},
-  title  = {Multi-View RF Evidence Aggregation with Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification},
+  title  = {Open-Set RF Fingerprint Identification via Complementary Evidence Aggregation and Cross-View Consistency},
   note   = {Submitted manuscript},
   year   = {2026},
-  url    = {https://github.com/pengs5462-code/PLSAR-RFFI}
+  url    = {https://github.com/pengs5462-code/CEACC-RFFI}
 }
 ```
 

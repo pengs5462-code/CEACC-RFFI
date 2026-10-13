@@ -2,7 +2,7 @@
 
 This folder covers the paper's matched external comparison. Each adaptation
 uses the same balanced RF input, registered split, random seed, and known-only
-calibration rule as PLSAR.
+calibration rule as CEACC.
 
 Implemented entries:
 
