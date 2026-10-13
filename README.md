@@ -3,6 +3,9 @@
 Official research artifact for **“Multi-View RF Evidence Aggregation with
 Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification.”**
 
+**Paper status:** submitted manuscript. The archival article link and DOI will
+be added after publication.
+
 PLSAR follows a **preserve–learn selectively–aggregate–re-examine** pipeline.
 It preserves a complete explicit RF descriptor, learns complementary
 amplitude/statistical, spectral, and temporal-envelope views, calibrates three
@@ -125,9 +128,22 @@ protocol adaptation is explicit.
 
 ## Citation
 
-Please cite the accompanying paper. Machine-readable metadata is provided in
-[`CITATION.cff`](CITATION.cff); bibliographic publication fields will be updated
-when the article record is available.
+If you use this code or the reported results, please cite the accompanying
+manuscript:
+
+```bibtex
+@unpublished{sun2026plsar,
+  author = {Peng Sun and Ping Gan and Yuanhong Zhong},
+  title  = {Multi-View RF Evidence Aggregation with Geometry-Aware Re-Examination for Open-Set RF Fingerprint Identification},
+  note   = {Submitted manuscript},
+  year   = {2026},
+  url    = {https://github.com/pengs5462-code/PLSAR-RFFI}
+}
+```
+
+Machine-readable metadata is provided in [`CITATION.cff`](CITATION.cff).
+The citation will be updated with the journal, volume, pages, and DOI when the
+archival article record becomes available.
 
 ## License
 
