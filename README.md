@@ -9,6 +9,48 @@ amplitude/statistical, spectral, and temporal-envelope views, calibrates three
 open-set evidence channels with known data only, and conditionally re-examines
 provisionally accepted samples using cross-view geometry and classifier entropy.
 
+## Method overview
+
+### 1. Preserve and learn selectively
+
+PLSAR keeps the complete 304-D explicit RF descriptor instead of forcing all
+RF cues into one learned representation. In parallel, a NetTime backbone
+extracts a deep embedding, while dedicated encoders selectively learn
+amplitude/statistical, spectral, and temporal-envelope views. These reusable
+representations support both open-set screening and known-emitter
+identification.
+
+<p align="center">
+  <img src="assets/method/fig1_framework_overview.png" width="100%" alt="Overview of the preserve-learn selectively-aggregate-re-examine framework">
+</p>
+
+### 2. Aggregate complementary known-only evidence
+
+The primary detector operates in three complementary spaces: the deep
+embedding, the explicit RF descriptor, and the learned multi-view embedding.
+Each channel is calibrated using enrolled-device data only. Their empirical
+tail evidence is then combined by a Fisher-type log-tail sum; in the learned
+multi-view channel, geometric and classifier-confidence evidence are first
+joined by a fixed OR rule. The resulting score either rejects the signal as
+unknown or provisionally accepts it for the next stage.
+
+<p align="center">
+  <img src="assets/method/fig2_three_space_aggregation.png" width="72%" alt="Three-space known-only evidence construction and aggregation">
+</p>
+
+### 3. Re-examine provisional accepts
+
+Only signals that pass the primary detector are re-examined. PLSAR reuses the
+physical-view projections to measure cross-view consistency and the classifier
+logits to measure prediction entropy. Known-only empirical calibration turns
+these cues into a conditional score, allowing difficult rogue signals hidden
+inside the primary accepted region to be recovered without tuning on target
+unknown samples.
+
+<p align="center">
+  <img src="assets/method/fig3_conditional_reexamination.png" width="68%" alt="Geometry-aware conditional re-examination">
+</p>
+
 ## Main results
 
 | Dataset / setting | AUC | OSCR | Known accuracy | Unknown recall |
