@@ -132,7 +132,7 @@ If you use this code or the reported results, please cite the accompanying
 manuscript:
 
 ```bibtex
-@unpublished{sun2026plsar,
+@unpublished{sun2026ceacc,
   author = {Peng Sun and Ping Gan and Yaxin Luo and Yuanhong Zhong and Jianhong Cheng},
   title  = {Open-Set RF Fingerprint Identification via Complementary Evidence Aggregation and Cross-View Consistency},
   note   = {Submitted manuscript},
