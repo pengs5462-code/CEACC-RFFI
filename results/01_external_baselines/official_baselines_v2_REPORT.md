@@ -20,10 +20,13 @@ The defensible official-code core is now:
 | HyperRSI, native hypersphere score | 0.6317 ± 0.0767 | 0.7580 ± 0.0279 | 0.5297 ± 0.0591 |
 | NS-RFF, native hypersphere/cosine score | 0.6774 ± 0.0649 | 0.7086 ± 0.0360 | 0.5217 ± 0.0492 |
 | OpenMax, audited EVT | 0.6330 ± 0.0269 | 0.6025 ± 0.0357 | 0.4349 ± 0.0312 |
+| BLi2, paper-described native clustering | 0.6569 ± 0.1001 | 0.5969 ± 0.0309 | 0.3717 ± 0.0477 |
 
-This trio avoids the appearance that all competing methods failed to train:
-each has a recognizable native open-set mechanism, non-collapsed closed-set
-accuracy, and AUC above 0.63 under the common protocol.
+These entries avoid the appearance that all competing methods failed to train:
+each has a recognizable open-set mechanism, non-collapsed closed-set accuracy,
+and AUC above 0.63. BLi2 is listed separately from the strictly known-only
+protocol because its published decision clusters the mixed target test batch;
+see `BLi2_REPORT.md` for the implementation and disclosure details.
 
 ## Implementation audit
 

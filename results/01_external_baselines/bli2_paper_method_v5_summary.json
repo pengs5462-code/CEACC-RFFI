@@ -1,0 +1,45 @@
+{
+  "method": "BLi2",
+  "implementation": "paper_faithful_standard_bls_v5",
+  "official_code_available": false,
+  "paper": {
+    "title": "A Lightweight Open-Set Specific Emitter Identification Based on Broad Learning",
+    "doi": "10.1109/JIOT.2025.3637514",
+    "venue": "IEEE Internet of Things Journal, 13(4):6158-6171, 2026"
+  },
+  "protocol": {
+    "dataset": "multiknown17_v1",
+    "splits": [1, 2, 3],
+    "seeds": [42, 2023, 3407],
+    "runs": 9,
+    "representation": "IAR phase of differential constellation trajectories",
+    "iar_delays": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "iar_fixed_frame_bins": 240,
+    "phase_encoding": "unit-circle real/imaginary coordinates",
+    "bls": {"p": 100, "k": 2, "q": 50, "b": 2, "hidden_dimension": 300, "ridge": 0.001},
+    "reported_variant": "paper-native K=2 clustering over mixed target-test logits",
+    "operating_threshold": "nearest-centroid K-means boundary",
+    "target_rogue_used_by_native_test_rule": true,
+    "target_rogue_used_for_gradient_training": false
+  },
+  "metrics": {
+    "auc": {"mean": 0.6568904320987655, "sample_std": 0.10005003647732867},
+    "eer": {"mean": 0.37222222222222223, "sample_std": 0.0915755413014878},
+    "fpr95": {"mean": 0.8888888888888888, "sample_std": 0.06838074236161762},
+    "known_closed_acc": {"mean": 0.5969135802469135, "sample_std": 0.030945879568645192},
+    "known_accept_rate": {"mean": 0.6919753086419752, "sample_std": 0.08893710112267125},
+    "unknown_recall": {"mean": 0.5395833333333333, "sample_std": 0.11924240017711821},
+    "unknown_f1": {"mean": 0.5710176917975522, "sample_std": 0.12042766207752448},
+    "oscr": {"mean": 0.3716512345679012, "sample_std": 0.047678996200593446},
+    "overall_open_acc": {"mean": 0.4604575163398692, "sample_std": 0.07560470052861991}
+  },
+  "split_means": [
+    {"split": 1, "auc": 0.6647453703703704, "known_closed_acc": 0.6296296296296297, "unknown_recall": 0.5791666666666667, "oscr": 0.4021412037037037},
+    {"split": 2, "auc": 0.768125, "known_closed_acc": 0.5666666666666667, "unknown_recall": 0.6520833333333333, "oscr": 0.40332754629629636},
+    {"split": 3, "auc": 0.5378009259259259, "known_closed_acc": 0.5944444444444444, "unknown_recall": 0.3875, "oscr": 0.30948495370370366}
+  ],
+  "reported_runner_sha256": "b8acc90f22b99f61a92d1ec3b793fca50ab675f1508a531f91f31bb1b9c399b4",
+  "archived_runner_sha256": "e8798580ee0461a5673675e17aa1f3b962cde2eb1c9421b97720b0313fb787d8",
+  "source_difference": "Documentation-only docstring edit when archiving the runner",
+  "completed_at": "2026-10-15T12:33:42+08:00"
+}

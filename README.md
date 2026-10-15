@@ -72,7 +72,7 @@ only for final evaluation.
 The numbered folders follow the experimental section of the paper:
 
 1. [`experiments/01_external_baselines`](experiments/01_external_baselines) —
-   NS-RFF, OpenMax, and HyperRSI protocol adaptations.
+   NS-RFF, OpenMax, HyperRSI, and the paper-described BLi2 reproduction.
 2. [`experiments/02_representation_preservation`](experiments/02_representation_preservation) —
    fixed-view and complementary-view architecture studies.
 3. [`experiments/03_evidence_aggregation`](experiments/03_evidence_aggregation) —
@@ -120,11 +120,12 @@ All scripts accept explicit paths or resolve the repository through
 
 ## Baseline scope
 
-The external methods are author-released components adapted to the same RF
-input, registered splits, seeds, and known-only calibration protocol. They are
-not claimed as original CEACC components. The result folders retain per-run
-outputs and implementation notes so the distinction between native scores and
-protocol adaptation is explicit.
+The external methods use the same RF input, registered splits, and seeds. Most
+use author-released components and known-only calibration; BLi2 is a
+paper-described reproduction and retains its native mixed-test K-means rule.
+They are not claimed as original CEACC components. The result folders retain
+compact outputs and implementation notes so the distinction between native
+scores, paper-described reproduction, and protocol adaptation is explicit.
 
 ## Citation
 

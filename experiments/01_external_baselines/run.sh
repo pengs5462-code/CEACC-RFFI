@@ -8,5 +8,6 @@ case "$method" in
   hyperrsi) exec python "$ROOT/baselines/train_hyperrsi_official.py" "$@" ;;
   nsrff) exec python "$ROOT/baselines/train_nsrff_official.py" "$@" ;;
   openmax) exec python "$ROOT/baselines/evaluate_openmax_multiknown17.py" "$@" ;;
+  bli2) exec python "$ROOT/baselines/train_bli2_paper.py" "$@" ;;
   *) echo "unknown baseline: $method" >&2; exit 2 ;;
 esac
